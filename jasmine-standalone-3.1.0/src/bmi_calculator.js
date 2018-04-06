@@ -7,9 +7,10 @@ function BMICalculator(){
     var height = obj.height;
     if (weight > 0 && height > 0) {
       var finalBmi = weight / (height / 100 * height / 100);
-      obj.bmiValue = parseFloat(finalBmi.toFixed(2));
+      obj.bmiValue =  parseFloat(finalBmi.toFixed(2));
       setBMIMessage(obj);
     }
+  }
 
 function setBMIMessage (obj){
     if (obj.bmiValue < 18.5) {
@@ -27,6 +28,4 @@ function setBMIMessage (obj){
   if (obj.bmiValue > 30) {
     obj.bmiMessage = 'Obese'
   }
-  
-  }
-}
+};

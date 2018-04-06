@@ -1,11 +1,11 @@
 
-describe("BMICalculator", function() {
+describe('BMICalculator', function() {
   var bmi_calculator;
   var person;
 
   beforeEach(function() {
     person = new Person({weight: 90, height: 186});
-    calculator = new bmi_calculator();
+    calculator = new BMICalculator();
   });
 
   it("calculates BMI for a person using metric method", function() {
